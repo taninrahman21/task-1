@@ -1,0 +1,14 @@
+/* Styles Navbar */
+*{
+  margin: 0;
+  padding: 0;
+}
+nav{
+  background: peru;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
