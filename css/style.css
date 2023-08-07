@@ -3,12 +3,288 @@
   margin: 0;
   padding: 0;
 }
+.home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .footer-body{
+  width: 75%;
+  margin: 80px auto;
+}
+
+/* Navbar Css starts Here */
 nav{
-  background: peru;
+  padding: 30px 0;
 }
 .navbar{
   display: flex;
   justify-content: space-between;
-  width: 80%;
+  align-items: center;
+  width: 75%;
   margin: 0 auto;
 }
+.nav-left, .name-logo{
+  display: flex;
+  align-items: center;
+}
+#brand-name{
+  font-weight: bold;
+}
+.nav-left img , .name-logo img{
+  width: 40px;
+  margin-right: 10px;
+}
+.nav-links a{
+  text-decoration: none;
+  color: black;
+  margin-right: 16px;
+  font-size: 1.2em;
+}
+
+#signup-btn{
+  text-decoration: none;
+  border: 1px solid #605BFE;
+  padding: 8px 15px;
+  color: #605BFE;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+#signin-btn, .btn{
+  text-decoration: none;
+  border: 1px solid #605BFE;
+  padding: 8px 15px;
+  background: #605BFE;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Navbar Css Ends Here */
+
+
+/* Home Page Starts Here */
+.home-body, .brand-body, .promo-body, .feature-body, .signup-body{
+  display: flex;
+  justify-content: space-between;
+}
+.home-section-left{
+  margin-right: 20px;
+}
+.home-heading{
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.home-para{
+  font-size: 16px;
+  margin: 25px 0;
+  margin-bottom: 40px;
+}
+
+.btn{
+  padding: 10px 20px;
+  font-size: 15px;
+  margin-right: 10px;
+}
+/* Home Page Ends Here */
+
+.brand-body{
+  align-items: center;
+}
+.brand{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow:  0 0px 8px 0px rgba(0, 0, 0, 0.15);
+  border: none;
+}
+
+
+
+/* Starts promo section css */
+.promo-details{
+  display: flex;
+  margin-bottom: 30px;
+}
+.promo-heading, .feature-heading{
+  color: #605BFE;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 50px;
+}
+.promo-details-head{
+  background: #605BFE;
+  height: 20px;
+  width: 20px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.get-started-btn, .feature-btn{
+  margin-top: 20px;
+  background: #605BFE;
+  color: white;
+}
+
+/* Ends promo section css */
+
+
+/* Starts Feature Section css */
+.feature-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.feature-img{
+  margin-left: 10px;
+}
+
+
+/* SignUp Section Css */
+.signup-section{
+  background: #605BFE;
+}
+.signup-heading{
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+.signup-para{
+  font-size: small;
+  color: white;
+ 
+}
+.signup-form{
+  margin: 30px 0;
+}
+.signup-form input{
+  display: block;
+  padding: 8px;
+  width: 90%;
+  border-radius: 8px;
+  margin: 15px 0;
+  border: none;
+}
+.signup-btn{
+  background: #5B93FF;
+  margin-top: 20px;
+}
+.signup-body{
+  padding: 30px 0;
+  align-items: center ;
+}
+.signup-img img{
+  width: 80%;
+}
+/* SignUp Section Css */
+
+/* Faq Css */
+.faq-body{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0;
+}
+.faq-heading{
+  font-size: 30px;
+  font-weight: bold;
+  color: #605BFE;
+  margin-bottom: 15px;
+}
+#faq-input{
+  padding: 10px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #605BFE;
+  margin-bottom: 5px;
+}
+.questions{
+  grid-column: 2/4;
+}
+.question{
+  border-bottom: 2px solid #DAD9D9;
+  padding: 15px 0;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.description{
+  max-height: 0;
+  overflow: hidden;
+  transition: 1s;
+}
+.question.active .description{
+  max-height: 400px;
+}
+.questions-topic li{
+  list-style: none;
+  font-size: 15px;
+  padding: 6px 15px;
+  background: #605BFE;
+  border-radius: 8px;
+  width: 100px;
+  text-align: center;
+  margin: 10px;
+  color: white;
+}
+/* Faq Css */
+
+/* Footer Css */
+.footer{
+  background: #030229;
+}
+.footer-body{
+  width: 75%;
+  padding: 50px 0;
+  margin: 30px auto;
+}
+
+.footer-details{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-column-gap: 10px;
+}
+.footer-one{
+  grid-column: 1/3;
+  margin-right: 30px;
+}
+.footer-menu-title{
+  color: #605BFE;
+}
+#footer-brand-name{
+  color: white;
+  font-weight: bold;
+  font-size: 2rem;
+}
+.footer-para{
+  margin: 20px 0;
+  color: white;
+}
+#email{
+  padding: 10px;
+  border: 1px solid #605BFE;
+  border-radius: 5px;
+  width: 90%;
+  background: transparent;
+}
+.footer-links{
+  margin-top: 20px;
+}
+.footer-links li{
+ list-style: none;
+ margin-bottom: 20px;
+ color: white;
+}
+
+hr{
+  color: #454545;
+  margin: 10px 0;
+}
+.footer-end{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+/* End of Footer Css */

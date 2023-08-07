@@ -8,16 +8,16 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  
   <header>
     <!-- Navbar Starts here -->
     <nav>
       <div class="navbar">
-        <div>
-          <h1>Perfect</h1>
+        <div class="nav-left">
+          <img src="images/logo.png" alt="logo">
+          <h1 id="brand-name">Perfect</h1>
         </div>
   
-        <div>
+        <div class="nav-links">
           <a href="#">Home</a>
           <a href="#">Products</a>
           <a href="#">Pricing</a>
@@ -25,36 +25,91 @@
           <a href="#">About</a>
         </div>
   
-        <div>
-          <a href="#">Sign Up</a>
-          <a href="#">Sign In</a>
+        <div class="nav-right">
+          <a id="signup-btn" href="#">Sign Up</a>
+          <a id="signin-btn" href="#">Sign In</a>
         </div>
       </div>
     </nav>
     <!-- Navbar Ends here -->
-
-    <!-- Header Page starts here -->
-    <section>
-      <h2>This home header</h2>
-    </section>
-    <!-- Header Page ends here -->
   </header>
 
+  <div class="">
+    <!-- Header Page starts here -->
+    <section class="home-section">
+      <div class="home-body">
+      <div class="home-section-left">
+        <h3 class="home-heading">Bringing the smartest people together through a network</h3>
+        <img src="images/header-line.png" alt="">
+        <p class="home-para">The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        <button class="btn">Try For Free</button>
+        <button class="btn">Watch Video</button>
+      </div>
+
+      <div>
+        <img src="images/header.png" alt="">
+      </div>
+    </div>
+    </section>
+    <!-- Header Page ends here -->
+  
+
   <!-- Brands section starts Here -->
-  <section>
-    <h2>This is Brand section</h2>
+  <section class="brand-section">
+    <div class="brand-body">
+      <div class="brand"><img src="images/brand2.png" alt=""></div>
+      <div class="brand"><img src="images/brand.png" alt=""></div>
+      <div class="brand"><img src="images/brand3.png" alt=""></div>
+      <div class="brand"><img src="images/brand4.png" alt=""></div>
+      <div class="brand"><img src="images/brand5.png" alt=""></div>
+    </div>
   </section>
   <!-- Brands section ends Here -->
   
    <!-- Promo section starts Here -->
-   <section>
-    <h2>This is Promo section</h2>
+   <section class="promo-section">
+    <div class="promo-body">
+    <div>
+      <img src="images/header2.PNG" alt="">
+    </div>
+
+    <div>
+      <h3 class="promo-heading">Launch your own <br>
+        branded apps</h3>
+      <div class="promo-details">
+        <div class="promo-details-head"></div>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply <br>
+          random text.</p>
+      </div>
+      <div class="promo-details">
+        <div class="promo-details-head"></div>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply <br>
+          random text.</p>
+      </div>
+      <div class="promo-details">
+        <div class="promo-details-head"></div>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply <br>
+          random text.</p>
+      </div>
+      <button class="btn get-started-btn">Get Started</button>
+    </div>
+  </div>
   </section>
   <!-- Promo section ends Here -->
 
  <!-- Features section starts Here -->
- <section>
-  <h2>This is Features section</h2>
+ <section class="feature-section">
+  <div class="feature-body">
+  <div>
+    <h3 class="feature-heading">Our Features</h3>
+    <p>This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+    <button class="btn feature-btn">Show All Features</button>
+  </div>
+
+  <div class="feature-img">
+    <img src="images/header3.PNG" alt="">
+  </div>
+</div>
 </section>
 <!-- Features section ends Here -->
 
@@ -71,21 +126,157 @@
 <!-- Feedback section ends Here -->
 
 <!-- Signup section starts Here -->
-<section>
-  <h2>This is Signup section</h2>
+<section class="signup-section">
+ <div class="signup-body">
+  <div>
+    <h3 class="signup-heading">Advance Solution Tracker</h3>
+    <p class="signup-para">Signup now. It’s free and takes less than 2 minutes</p>
+
+    <form class="signup-form">
+      <input type="text" name="" placeholder="Enter your full name">
+      <input type="text" name="" placeholder="Enter your Email">
+      <input type="text" name="" placeholder="Enter password">
+      <button class="btn signup-btn">Get Started for Free</button>
+    </form>
+  </div>
+  <div class="signup-img">
+   <img src="images/header4.png" alt="">
+  </div>
+ </div>
 </section>
 <!-- Signup section ends Here -->
 
 <!-- FAQ section starts Here -->
-<section>
-  <h2>This is FAQ section</h2>
+<section class="faq-section">
+  <h2 class="faq-heading">Have Any Questions?</h2>
+  <input id="faq-input" type="text" name="text" placeholder="Enter your questions">
+
+  <div class="faq-body">
+
+    <div class="questions-topic">
+      <li class="topic">Generel</li>
+      <li class="topic">Transaction</li>
+      <li class="topic">Payments</li>
+      <li class="topic">Returns</li>
+      <li class="topic">Carrier</li>
+      <li class="topic">Others</li>
+    </div>
+
+    <div class="questions">
+
+      <div class="question">
+
+        <div class="title">
+          <h1>Where can I get technical help for online transactions?</h1>
+          <h2 >+</h2>
+        </div>
+
+      <p class="description">
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+      </div>
+
+      <div class="question">
+        <div class="title">
+          <h1>How do I signup for the trail?</h1>
+          <h2>+</h2>
+        </div>
+      <p class="description">
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+      </div>
+
+      <div class="question">
+        <div class="title">
+          <h1>Does the document need to be in specific file format?</h1>
+          <h2>+</h2>
+        </div>
+      <p class="description">
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+      </div>
+
+      <div class="question">
+        <div class="title">
+          <h1>How do I import my transactions?</h1>
+          <h2>+</h2>
+        </div>
+      <p class="description">
+        The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+      </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 <!-- FAQ section ends Here -->
+</div>
 
 
-<footer>
-  TThis is footer
+<footer class="footer">
+  <div class="footer-body">
+
+  <div class="footer-details">
+    <div class="footer-one">
+      <div class="name-logo">
+        <img src="images/logo.png" alt="logo">
+        <h1 id="footer-brand-name">Perfect</h1>
+      </div>
+      <p class="footer-para">Get started noew try our product</p>
+      <div>
+        <input type="text" name="email" id="email" placeholder="Enter your email here">
+      </div>
+    </div>
+    <div>
+      <h3 class="footer-menu-title">Product</h3>
+      <ul class="footer-links">
+        <li>Features</li>
+        <li>Api</li>
+        <li>Solutions</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-menu-title">Support</h3>
+      <ul class="footer-links">
+        <li>Help Center</li>
+        <li>Account Information</li>
+        <li>About</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-menu-title">Help</h3>
+      <ul class="footer-links">
+        <li>Talk to Support</li>
+        <li>Support Docs</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="footer-menu-title">Contact</h3>
+      <ul class="footer-links">
+        <li>10 New Town Street, A4 6WBS,
+          Dhaka, Bangladesh</li>
+        <li>(+880) 1671518782</li>
+        <li>hbforhad8782@gmail.com</li>
+      </ul>
+    </div>
+  </div>
+
+  <hr>
+
+  <div class="footer-end">
+    <div><p>© 2022 Tanin Rahman Copyright and rights reserved</p></div>
+    <div><p>Terms and Condtions
+      Privacy Policy</p></div>
+  </div>
+  
+  </div>
+
+  
 </footer>
+
+
 
 
   <script src="js/task1.js"></script>
