@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
 }
-.home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .footer-body{
+.home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
   width: 75%;
   margin: 80px auto;
 }
@@ -54,6 +54,7 @@ nav{
   border-radius: 10px;
 }
 
+
 /* Navbar Css Ends Here */
 
 
@@ -81,6 +82,7 @@ nav{
   font-size: 15px;
   margin-right: 10px;
 }
+
 /* Home Page Ends Here */
 
 .brand-body{
@@ -127,6 +129,7 @@ nav{
 /* Ends promo section css */
 
 
+
 /* Starts Feature Section css */
 .feature-body{
   display: flex;
@@ -136,6 +139,94 @@ nav{
 .feature-img{
   margin-left: 10px;
 }
+
+
+
+/* Pricing Css Starts Here */
+.pricing-heading{
+  text-align: center;
+  font-weight: bold;
+  color: #605BFE;
+  font-size: 25px;
+}
+.pricing-para{
+  text-align: center;
+  margin: 20px 0;
+}
+.pricing-btn-container{
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border: 1px solid #5B93FF;
+  padding: 5px 15px;
+  background: #605BFE;
+  color: white;
+  border-radius: 30px;
+}
+.pricing-btn{
+  border: 1px solid #5B93FF;
+  padding: 10px 20px;
+  background: #605BFE;
+  color: white;
+  border-radius: 20px;
+}
+.pricing-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 20px 0;
+}
+.active-yearly{
+  background: white;
+  color: #605BFE;
+}
+.active-monthly{
+  background: white;
+  color: #605BFE;
+}
+.chooseplan-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.pricing-div{
+  background: #D8E5FF;
+  padding: 20px 20px;
+  border-radius: 15px;
+  color: #605BFE;
+}
+.pricing-div.active-price-div{
+  background: #5B93FF;
+  margin: -25px 0;
+  color: white;
+}
+.pricing-div ul{
+  margin-top: 20px;
+}
+.pricing-div ul li{
+  list-style: none;
+  margin: 15px;
+  font-size: 15px;
+}
+.price-div-head{
+  text-align: center;
+}
+.price-package-name{
+  font-size: 30px;
+  margin: 10px 0;
+}
+.price-div-head hr{
+  margin: 10px 0;
+}
+.monthly-pricing{
+  display: none;
+}
+.yearly-pricing{
+  display: none;
+}
+/* Pricing Css Ends Here */
 
 
 /* SignUp Section Css */
@@ -288,3 +379,57 @@ hr{
 }
 
 /* End of Footer Css */
+
+
+/* Starts responsive css */
+@media screen and (max-width: 672px) {
+  .home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
+  width: 85%;
+  margin: 30px auto;
+}
+  .navbar{
+    width: 85%;
+  }
+  .nav-links{
+    display: none;
+  }
+  .home-body, .promo-body, .feature-body, .signup-body{
+    flex-direction: column;
+    align-items: center;
+  }
+  .home-heading{
+    font-size: 2rem;
+    margin-bottom: .75em;
+  }
+  .home-section-left img{
+    width: 100%;
+  }
+  .home-right img{
+    width: 100%;
+    margin: 20px 0;
+  }
+  .feature-img{
+    margin: 10px 0;
+  }
+  .brand-body{
+    flex-wrap: wrap;
+  }
+  .promo-left img{
+   width: 100%;
+  }
+  .feature-img img{
+    width: 100%;
+  }
+  .signup-img img{
+    width: 70%;
+    margin: 10px auto;
+    margin-left: 50px;
+  }
+  .pricing-container{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-details{
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+  }
+}

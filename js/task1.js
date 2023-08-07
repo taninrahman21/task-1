@@ -1,4 +1,10 @@
 const questions = document.querySelectorAll(".question");
+const pricingDivs = document.querySelectorAll(".pricing-div");
+const pricingBtnsYearly = document.getElementById("pricing-btn-yearly");
+const pricingBtnsMonthly = document.getElementById("pricing-btn-monthly");
+const pricingYearly = document.getElementById("yearly");
+const pricingMonthly = document.getElementById("monthly");
+
 questions.forEach((question, idx) => {
   question.addEventListener("click", () => {
     question.classList.toggle("active");
@@ -10,9 +16,23 @@ questions.forEach((question, idx) => {
   });
 })
 
-const faqs = () => {
-  fetch("questions.json")
-  .then((res) => res.json())
-  .then((data) => console.log(data))
-  .catch((error) => console.log(error));
-}
+pricingDivs.forEach((pricingDiv, idx) => {
+    pricingDiv.addEventListener("click", () => {
+    pricingDiv.classList.toggle("active-price-div")
+});
+})
+
+pricingBtnsYearly.addEventListener('click', () => {
+  pricingBtnsMonthly.classList.remove('active-monthly');
+  pricingBtnsYearly.classList.add('active-yearly');
+  pricingYearly.classList.remove('yearly-pricing');
+  pricingMonthly.classList.add('monthly-pricing');
+
+})
+pricingBtnsMonthly.addEventListener('click', () => {
+  console.log("monthly clicked");
+  pricingBtnsYearly.classList.remove('active-yearly');
+  pricingBtnsMonthly.classList.add('active-monthly');
+  pricingYearly.classList.add('yearly-pricing');
+  pricingMonthly.classList.remove('monthly-pricing');
+})
