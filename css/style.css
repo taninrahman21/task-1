@@ -261,6 +261,60 @@ nav{
 }
 /* Pricing Css Ends Here */
 
+/* Start Feedback css */
+.feedback-slider {
+  width: 80%;
+  height: 500px;
+  margin: 30px auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.item {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  transition: 0.5s;
+  left: calc(50% - 140px);
+  top: 0;
+  z-index: 999;
+}
+
+img.img {
+  width: 80%;
+  border-radius: 5px;
+}
+
+h3.title {
+  font-size: 20px;
+  padding: 5px 0px;
+}
+.item p{
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+#prev,
+#next {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  border: none;
+  outline: none;
+  padding: 5px 17px;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 18px;
+}
+#next {
+  left: unset;
+  right: 20px;
+}
+/* End Feedback css */
+
 
 /* SignUp Section Css */
 .signup-section{
