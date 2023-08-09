@@ -498,9 +498,12 @@ hr{
 }
 
 @media screen and (max-width: 900px) {
-  .home-section,.brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
+  .home-section,.brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .feature-body, .pricing-section, .footer-body{
     width: 80%;
     margin: 20px auto;
+  }
+  .feature-left, .feature-img {
+    width: 100%;
   }
   .home-section-left{
     width: 100%;
@@ -591,7 +594,11 @@ hr{
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
+  .home-section,.brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .feature-body, .pricing-section, .footer-body{
+    width: 90%;
+    margin: 20px auto;
+  }
   .pricing-container{
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px;
