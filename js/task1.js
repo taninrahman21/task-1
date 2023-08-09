@@ -4,6 +4,12 @@ const pricingBtnsYearly = document.getElementById("pricing-btn-yearly");
 const pricingBtnsMonthly = document.getElementById("pricing-btn-monthly");
 const pricingYearly = document.getElementById("yearly");
 const pricingMonthly = document.getElementById("monthly");
+const menuBar = document.querySelector('.menu-bar')
+const navbar = document.querySelector(".nav-links");
+
+menuBar.addEventListener("click", () => {
+  navbar.classList.toggle("show-links");
+})
 
 questions.forEach((question, idx) => {
   question.addEventListener("click", () => {

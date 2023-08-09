@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
   width: 75%;
@@ -19,6 +20,19 @@ nav{
   width: 75%;
   margin: 0 auto;
 }
+.nav-links ul{
+  display: flex;
+}
+.nav-links ul li{
+  list-style: none;
+}
+.nav-links ul li a{
+  display: block;
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  margin: 0 10px;
+}
 .nav-left, .name-logo{
   display: flex;
   align-items: center;
@@ -30,20 +44,23 @@ nav{
   width: 40px;
   margin-right: 10px;
 }
-.nav-links a{
-  text-decoration: none;
-  color: black;
-  margin-right: 16px;
-  font-size: 1.2em;
+.nav-right ul {
+  display: flex;
 }
-
+.nav-right ul li{
+  list-style: none;
+  margin-left: 15px;
+}
+.nav-right ul li img{
+  width: 25px;
+  display: none;
+}
 #signup-btn{
   text-decoration: none;
   border: 1px solid #605BFE;
   padding: 8px 15px;
   color: #605BFE;
   border-radius: 10px;
-  margin-right: 10px;
 }
 #signin-btn, .btn{
   text-decoration: none;
@@ -59,7 +76,7 @@ nav{
 
 
 /* Home Page Starts Here */
-.home-body, .brand-body, .promo-body, .feature-body, .signup-body{
+.home-body, .promo-body, .feature-body, .signup-body{
   display: flex;
   justify-content: space-between;
 }
@@ -85,14 +102,30 @@ nav{
 
 /* Home Page Ends Here */
 
-.brand-body{
-  align-items: center;
+@keyframes slide {
+  from {
+    transform: translateX();
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
-.brand{
-  height: 50px;
-  display: flex;
-  align-items: center;
+.brand-section{
+  width: 75%;
+  overflow: hidden;
+  margin: 10px auto;
+  white-space: nowrap;
+}
+.brand-body{
+  display: inline-block;
+  padding: 10px;
+  animation: 8s slide infinite  linear;
+}
+.brand-body img{
+  height: 60px;
+  width: 130px;
   padding: 20px;
+  margin-right: 10px;
   border-radius: 10px;
   margin-right: 20px;
   box-shadow:  0 0px 8px 0px rgba(0, 0, 0, 0.15);
@@ -382,16 +415,85 @@ hr{
 
 
 /* Starts responsive css */
-@media screen and (max-width: 672px) {
+@media screen and (max-width: 1200px){
   .home-section, .brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
-  width: 85%;
-  margin: 30px auto;
+    width: 90%;
+    margin: 30px auto;
+  }
+  .navbar{
+    width: 90%;
+  }
+.home-section-left{
+  width: 60%;
 }
+.feature-left, .feature-img {
+  width: 50%;
+}
+.feature-img img{
+  width: 90%;
+}
+.home-right img {
+  width: 100%;
+}
+.home-section-left img{
+  width: 100%;
+}
+.home-heading{
+  font-size: 1.5rem;
+}
+}
+
+@media screen and (max-width: 900px) {
+  .home-section,.brand-section, .promo-section, .signup-body, .feature-section,.faq-section, .pricing-section, .footer-body{
+    width: 80%;
+    margin: 20px auto;
+  }
+  .home-section-left{
+    width: 100%;
+  }
   .navbar{
     width: 85%;
   }
+  .nav-right ul li img{
+    display: block;
+  }
   .nav-links{
-    display: none;
+    max-height: 0;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    transition: 0.2s;
+    background: white;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .brand-section{
+    width: 85%;
+  }
+  .brand-body img{
+    height: 40px;
+    width: 100px;
+  }
+  .nav-links.show-links {
+    max-height: 500px;
+  }
+  .nav-links ul{
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-links ul li{
+    margin: 10px 0;
+    padding: 5px 0;
+  }
+  .nav-links.show-links ul {
+    opacity: 1;
+  }
+  #signup-btn, #signin-btn{
+    padding: 5px 10px;
   }
   .home-body, .promo-body, .feature-body, .signup-body{
     flex-direction: column;
@@ -426,10 +528,35 @@ hr{
     margin-left: 50px;
   }
   .pricing-container{
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
   }
   .footer-details{
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .pricing-container{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+  }
+  .footer-details{
+    /* grid-template-rows: repeat(1, 1fr); */
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .footer-links li{
+    font-size: 10px;
+  }
+  #email{
+    width: fit-content;
+  }
+  .nav-left{
+    width: 15px;
+  }
+  #signup-btn, #signin-btn{
+    padding: 3px;
   }
 }
